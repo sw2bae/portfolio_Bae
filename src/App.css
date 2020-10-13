@@ -5,13 +5,16 @@
 
   --font-xlarge: 3.5rem;
   --font-large: 2rem;
-  --font-medium: 25px;
+  --font-medium: 1.5rem;
+  --font-small: 1rem;
 
   --space-lg: 2rem;
+  --space-md: 1.5rem;
   --space-sm: 1rem;
 
   --color-white: rgb(255, 255, 255);
   --color-point: rgb(133, 51, 51);
+  --color-black: rgb(34, 33, 33);
 }
 
 * {
@@ -20,10 +23,6 @@
   box-sizing: border-box;
 }
 
-body {
-  /* height: 100%;
-  width: 100vw; */
-}
 .point {
   color: var(--color-point);
   font-weight: bold;
@@ -102,6 +101,30 @@ nav .navbar_menubar {
   font-size: var(--font-large);
   text-align: center;
 }
+/* ---------Main_Skill---------- */
+.skill {
+  padding: var(--space-lg);
+  text-align: center;
+  font-family: "Alef", sans-serif;
+}
+
+.skill_list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.skill_list li {
+  list-style: none;
+}
+.skill_list li i {
+  font-size: var(--font-xlarge);
+  margin-bottom: 1rem;
+  color: var(--color-point);
+}
+.skill_list li p {
+  font-size: var(--font-medium);
+  color: var(--color-black);
+}
 
 @media (max-width: 768px) {
   header {
@@ -143,5 +166,21 @@ nav .navbar_menubar {
   }
   nav .navbar_menubar {
     display: block;
+  }
+  /* ---------Main_Skill---------- */
+  .skill_list {
+    display: block;
+    font-weight: bold;
+  }
+  .skill_list li i {
+    font-size: var(--font-large);
+    margin-bottom: 0.5rem;
+  }
+  .skill_list li p {
+    font-size: var(--font-small);
+    margin-bottom: var(--space-lg);
+  }
+  .skill_qa :last-child {
+    margin-bottom: 0;
   }
 }

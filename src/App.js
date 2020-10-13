@@ -15,22 +15,22 @@ function App() {
 
       <main>
         <section className="skill">
-          <ul>
+          <ul className="skill_list">
             <li className="skill_web">
               <i className="fas fa-laptop-code"></i>
-              <span>WEB DEVELOPMENT</span>
+              <p>WEB DEVELOPMENT</p>
             </li>
             <li className="skill_design">
               <i className="fas fa-mobile-alt"></i>
-              <span>RESPONSIVE DESIGN</span>
+              <p>RESPONSIVE DESIGN</p>
             </li>
             <li className="skill_automation">
               <i className="fas fa-robot"></i>
-              <span>AUTOMATION TEST</span>
+              <p>AUTOMATION TEST</p>
             </li>
             <li className="skill_qa">
               <i className="fas fa-eye"></i>
-              <span>QUALITY ASSURANCE</span>
+              <p>QUALITY ASSURANCE</p>
             </li>
           </ul>
         </section>
