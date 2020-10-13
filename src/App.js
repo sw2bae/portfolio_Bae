@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import Header from "./components/header";
+
 import './App.css';
 
 function App() {
@@ -7,38 +10,8 @@ function App() {
 
 
   return (
-    <>
-      <header>
-        <nav className="navbar">
-          <div className="navbar_logo">
-            <i className="fas fa-battery-full"></i>
-            <span className="navbar_title"> Porfolio</span>
-          </div>
-          <ul className="navbar_menu">
-            <li><a href>About</a></li>
-            <li><a href>Porfolio</a></li>
-            <li><a href>Resume</a></li>
-            <li><a href>Contact</a></li>
-          </ul>
-          <div className="navbar_icon">
-            <i className="fab fa-github-square"></i>
-            <i className="fab fa-linkedin"></i>
-          </div>
-          <a href className="navbar_menubar">
-            <i className="fas fa-bars"></i>
-          </a>
-        </nav>
-        <div className="navbar_name">
-          <h1>SANG BAE</h1>
-          <div className="navbar_position">
-            <p>FULL-STACK WEB DEVELOPER</p>
-            <p>SW QUALITY ASSURANCE ENGINEER</p>
-          </div>
-        </div>
-        <div className="navbar_downArrow">
-          <i className="fas fa-chevron-down"></i>
-        </div>
-      </header>
+    <Router>
+      <Header />
 
       <main>
         <section className="skill">
@@ -128,7 +101,7 @@ function App() {
           <i className="fab fa-linkedin"></i>
         </div>
       </footer>
-    </>
+    </Router>
   );
 }
 
