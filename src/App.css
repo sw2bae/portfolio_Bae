@@ -1,0 +1,128 @@
+:root {
+  --background-before: rgb(0, 0, 0, 0.9);
+  --background-after: rgba(236, 60, 60, 0.6);
+  --background-image: url("seattle1.jpeg");
+
+  --font-xlarge: 3.5rem;
+  --font-large: 2rem;
+  --font-medium: 25px;
+
+  --space-lg: 2rem;
+  --space-sm: 1rem;
+
+  --color-white: rgb(255, 255, 255);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* height: 100%;
+  width: 100vw; */
+}
+
+header {
+  background-image: var(--background-image);
+  background-color: var(--background-after);
+  background-blend-mode: saturation;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  transition: background-color 4s;
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--color-white);
+}
+
+header:hover {
+  background-color: var(--background-after);
+  transition: background-color 3s;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-medium);
+}
+.navbar_title {
+  font-size: var(--font-large);
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 3rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: var(--font-medium);
+}
+
+.navbar_icon i {
+  margin-left: 1rem;
+}
+
+nav .navbar_menubar {
+  position: absolute;
+  right: var(--space-sm);
+  top: var(--space-sm);
+  padding: 8px;
+  display: none;
+}
+
+.navbar_name {
+  text-align: center;
+  margin-bottom: 17rem;
+}
+
+.navbar_name h1 {
+  font-size: var(--font-xlarge);
+  margin-bottom: var(--space-lg);
+}
+
+.navbar_downArrow {
+  font-size: var(--font-large);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: var(--space-sm);
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar_logo {
+    font-size: x-large;
+    margin-bottom: var(--space-sm);
+  }
+  .navbar_menu {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+  .navbar_menu li {
+    padding: 4px 0;
+    font-size: large;
+  }
+  .navbar_icon {
+    align-self: center;
+    display: none;
+  }
+  .navbar_icon i {
+    margin-left: 0;
+    margin-right: var(--space-sm);
+    margin-top: var(--space-sm);
+  }
+  nav .navbar_menubar {
+    display: block;
+  }
+}
