@@ -18,37 +18,41 @@ function App() {
           <ul className="skill_list">
             <li className="skill_web">
               <i className="fas fa-laptop-code"></i>
-              <p>WEB DEVELOPMENT</p>
+              <p>WEB<br />DEVELOPMENT</p>
             </li>
             <li className="skill_design">
               <i className="fas fa-mobile-alt"></i>
-              <p>RESPONSIVE DESIGN</p>
+              <p>RESPONSIVE<br />DESIGN</p>
             </li>
             <li className="skill_automation">
               <i className="fas fa-robot"></i>
-              <p>AUTOMATION TEST</p>
+              <p>AUTOMATION<br />TEST</p>
             </li>
             <li className="skill_qa">
               <i className="fas fa-eye"></i>
-              <p>QUALITY ASSURANCE</p>
+              <p>QUALITY<br />ASSURANCE</p>
             </li>
           </ul>
         </section>
 
         <section className="about">
-
           <h2 className="about_title">About Me</h2>
           <p>Hi, I am Sang Bae.</p>
           <ul className="about_skill">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>NodeJS</li>
-            <li>MySQL</li>
-            <li>MongoDB</li>
-            <li>ReactJS</li>
-            <li>QXDM|QCAT</li>
+            <div>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>NodeJS</li>
+            </div>
+            <div>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+              <li>ReactJS</li>
+              <li>QXDM</li>
+              <li>QCAT</li>
+            </div>
           </ul>
         </section>
 

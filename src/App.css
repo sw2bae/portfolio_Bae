@@ -1,13 +1,16 @@
 :root {
   --background-before: rgb(0, 0, 0, 0.9);
-  --background-after: rgba(236, 60, 60, 0.6);
+  --background-after: rgb(236, 60, 60, 0.6);
   --background-image: url("seattle1.jpeg");
 
-  --font-xlarge: 3.5rem;
+  --font-xxlarge: 3.5rem;
+  --font-xlarge: 3rem;
   --font-large: 2rem;
   --font-medium: 1.5rem;
   --font-small: 1rem;
 
+  --space-xxlg: 4rem;
+  --space-xlg: 3rem;
   --space-lg: 2rem;
   --space-md: 1.5rem;
   --space-sm: 1rem;
@@ -45,7 +48,8 @@ header {
   flex-direction: column;
   justify-content: space-between;
   color: var(--color-white);
-  font-family: "Alef", sans-serif;
+  /* font-family: "Alef", sans-serif; */
+  font-family: "Acme", sans-serif;
 }
 
 header:hover {
@@ -58,6 +62,9 @@ header:hover {
   justify-content: space-between;
   align-items: center;
   font-size: var(--font-medium);
+}
+.navbar_logo {
+  font-size: var(--font-large);
 }
 .navbar_title {
   font-size: var(--font-large);
@@ -78,6 +85,9 @@ nav ul li {
 .navbar_icon i {
   margin-left: 1rem;
 }
+.navbar_icon a {
+  font-size: var(--font-large);
+}
 
 nav .navbar_menubar {
   position: absolute;
@@ -93,7 +103,7 @@ nav .navbar_menubar {
 }
 
 .navbar_name h1 {
-  font-size: var(--font-xlarge);
+  font-size: var(--font-xxlarge);
   margin-bottom: var(--space-lg);
 }
 
@@ -117,13 +127,55 @@ nav .navbar_menubar {
   list-style: none;
 }
 .skill_list li i {
-  font-size: var(--font-xlarge);
+  font-size: var(--font-xxlarge);
   margin-bottom: 1rem;
   color: var(--color-point);
 }
 .skill_list li p {
   font-size: var(--font-medium);
   color: var(--color-black);
+}
+/* -------Main_About-------- */
+.about {
+  padding: var(--space-xlg);
+  font-family: "Acme", sans-serif;
+  background-image: url("hawaii0.jpeg");
+  background-color: var(--background-before);
+  transition: background-color 4s;
+  background-blend-mode: saturation;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--color-white);
+  padding-left: var(--space-xxlg);
+  padding-right: var(--space-xxlg);
+}
+.about:hover {
+  background-color: var(--background-after);
+  transition: background-color 4s;
+}
+.about_title {
+  font-size: var(--font-xlarge);
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-md);
+  color: var(--color-black);
+}
+.about p {
+  font-size: var(--font-medium);
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+.about_skill {
+  font-size: var(--font-small);
+  display: flex;
+  margin: var(--space-md);
+  list-style-type: square;
+  color: var(--color-black);
+}
+.about_skill div {
+  padding-right: var(--space-xlg);
+}
+.about_skill:last-child {
+  margin-bottom: var(--space-md);
 }
 
 @media (max-width: 768px) {
@@ -167,6 +219,9 @@ nav .navbar_menubar {
   nav .navbar_menubar {
     display: block;
   }
+  .navbar_name h1 {
+    font-size: var(--font-xlarge);
+  }
   /* ---------Main_Skill---------- */
   .skill_list {
     display: block;
@@ -183,4 +238,5 @@ nav .navbar_menubar {
   .skill_qa :last-child {
     margin-bottom: 0;
   }
+  /* -------Main_About-------- */
 }
