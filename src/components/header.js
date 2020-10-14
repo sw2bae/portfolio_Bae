@@ -14,7 +14,7 @@ function Header() {
         <header>
             <nav className="navbar">
                 <div className="navbar_logo">
-                    <i className="fas fa-battery-full"></i>
+                    <i class="fab fa-connectdevelop"></i>
                     <span className="navbar_title"> <span className="point">BAE</span></span>
                 </div>
                 <Link className='navbar_menubar' onClick={toggleBtn}>

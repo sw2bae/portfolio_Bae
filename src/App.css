@@ -140,8 +140,8 @@ nav .navbar_menubar {
   padding: var(--space-xlg);
   font-family: "Acme", sans-serif;
   background-image: url("hawaii0.jpeg");
-  background-color: var(--background-before);
-  transition: background-color 4s;
+  background-color: var(--background-after);
+  /* transition: background-color 4s; */
   background-blend-mode: saturation;
   background-repeat: no-repeat;
   background-size: cover;
@@ -149,14 +149,14 @@ nav .navbar_menubar {
   padding-left: var(--space-xxlg);
   padding-right: var(--space-xxlg);
 }
-.about:hover {
+/* .about:hover {
   background-color: var(--background-after);
-  transition: background-color 4s;
-}
+  transition: background-color 3s;
+} */
 .about_title {
   font-size: var(--font-xlarge);
   margin-top: var(--space-md);
-  margin-bottom: var(--space-md);
+  /* margin-bottom: var(--space-md); */
   color: var(--color-black);
 }
 .about p {
@@ -164,11 +164,16 @@ nav .navbar_menubar {
   margin-top: var(--space-sm);
   margin-bottom: var(--space-sm);
 }
+.about span {
+  display: block;
+  font-size: var(--font-small);
+  margin-bottom: var(--space-sm);
+}
+
 .about_skill {
   font-size: var(--font-small);
   display: flex;
-  margin: var(--space-md);
-  list-style-type: square;
+  list-style: none;
   color: var(--color-black);
 }
 .about_skill div {
