@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import Header from "./components/header";
 import Skill from "./components/skill";
 import About from "./components/about";
+import Resume from "./components/resume";
 
 import './App.css';
 
 function App() {
-
 
 
 
@@ -16,23 +16,17 @@ function App() {
       <Header />
       <Skill />
       <About />
+      <Resume />
+
 
       <section className="porfolio">
-        <h2 className="porfolio_title">My Work</h2>
+        <h1 className="porfolio_title">My Work</h1>
         <ul className="porfolio_list">
-          <li>WORK1</li>
+          <li><img alt="0" src="https://i.ibb.co/zVZHhkX/Survey-Creator.png" /></li>
           <li>WORK2</li>
           <li>WORK3</li>
-        </ul>
-        <button className="porfolio_btn">See More</button>
-      </section>
 
-      <section className="resume">
-        <div>
-          <h2 className="resume_title">Like What You See?</h2>
-          <p>Check out my resume to learn more.</p>
-        </div>
-        <button className="resume_btn">View Resume</button>
+        </ul>
       </section>
 
       <section className="contact">

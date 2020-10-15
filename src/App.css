@@ -138,16 +138,17 @@ nav .navbar_menubar {
 /* -------Main_About-------- */
 .about {
   padding: var(--space-xlg);
+  padding-left: var(--space-xxlg);
+  padding-right: var(--space-xxlg);
   font-family: "Acme", sans-serif;
+  color: var(--color-white);
   background-image: url("hawaii0.jpeg");
   background-color: var(--background-after);
   /* transition: background-color 4s; */
   background-blend-mode: saturation;
   background-repeat: no-repeat;
   background-size: cover;
-  color: var(--color-white);
-  padding-left: var(--space-xxlg);
-  padding-right: var(--space-xxlg);
+  height: 70vh;
 }
 /* .about:hover {
   background-color: var(--background-after);
@@ -168,8 +169,8 @@ nav .navbar_menubar {
   display: block;
   font-size: var(--font-small);
   margin-bottom: var(--space-sm);
+  font-family: "Alef", sans-serif;
 }
-
 .about_skill {
   font-size: var(--font-small);
   display: flex;
@@ -177,10 +178,75 @@ nav .navbar_menubar {
   color: var(--color-black);
 }
 .about_skill div {
-  padding-right: var(--space-xlg);
+  padding-right: var(--space-xxlg);
 }
 .about_skill:last-child {
   margin-bottom: var(--space-md);
+}
+/* --------Main_Resume----------- */
+.resume {
+  padding: var(--space-xlg);
+  padding-left: var(--space-xxlg);
+  padding-right: var(--space-xxlg);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  background-color: var(--color-white);
+  font-family: "Alef", sans-serif;
+  height: 30vh;
+}
+.resume_title {
+  font-size: var(--font-xxlarge);
+  color: var(--color-point);
+}
+.resume div p {
+  font-size: var(--font-small);
+  color: var(--color-black);
+  font-weight: bold;
+}
+.resume_btn {
+  font-size: var(--font-xxlarge);
+  color: var(--color-black);
+}
+/* -------------Main_Porfolio------------ */
+.porfolio {
+  padding: var(--space-xlg);
+  padding-left: var(--space-xxlg);
+  padding-right: var(--space-xxlg);
+  font-family: "Acme", sans-serif;
+  background-image: url(la0.jpeg);
+  background-color: var(--background-after);
+  background-blend-mode: saturation;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--color-white);
+  height: 100vh;
+}
+.porfolio_title {
+  font-size: var(--font-xxlarge);
+  text-align: center;
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+.porfolio_list {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+  height: 50vh;
+}
+.porfolio_list li {
+  border: 1px black solid;
+  width: 25rem;
+  height: 15rem;
+  margin: var(--space-sm);
+  list-style: none;
+  overflow: hidden;
+}
+.porfolio_list li img {
+  max-width: 100%;
+  height: max-content;
 }
 
 @media (max-width: 768px) {
