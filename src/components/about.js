@@ -18,7 +18,7 @@ function About() {
                     <li><i className="fab fa-css3-alt"></i>&nbsp;&nbsp;CSS3</li>
                     <li><i className="fab fa-js-square"></i>&nbsp;&nbsp;JavaScript</li>
                     <li><i className="fab fa-python"></i>&nbsp;&nbsp;Python</li>
-                    <li><i className="fab fa-node"></i>&nbsp;&nbsp;NodeJS</li>
+                    <li><i className="fab fa-node-js"></i>&nbsp;&nbsp;NodeJS</li>
                 </div>
                 <div>
                     <li><i className="fas fa-database"></i>&nbsp;&nbsp;MySQL</li>

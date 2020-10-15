@@ -23,7 +23,7 @@ function Header() {
                 <ul className={"navbar_menu" + (toggleBtnStatus ? "_active" : "")}>
                     <li><a href>About</a></li>
                     <li><a href>Resume</a></li>
-                    <li><a href>Porfolio</a></li>
+                    <li><a href>Portfolio</a></li>
                     <li><a href>Contact</a></li>
                 </ul>
                 <div className={"navbar_icon" + (toggleBtnStatus ? "_active" : "")}>

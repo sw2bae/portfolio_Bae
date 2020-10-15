@@ -141,6 +141,7 @@ nav .navbar_menubar {
   padding-left: var(--space-xxlg);
   padding-right: var(--space-xxlg);
   font-family: "Acme", sans-serif;
+
   color: var(--color-white);
   background-image: url("hawaii0.jpeg");
   background-color: var(--background-after);
@@ -210,11 +211,11 @@ nav .navbar_menubar {
   color: var(--color-black);
 }
 /* -------------Main_Porfolio------------ */
-.porfolio {
+.portfolio {
   padding: var(--space-xlg);
   padding-left: var(--space-xxlg);
   padding-right: var(--space-xxlg);
-  font-family: "Acme", sans-serif;
+  font-family: "Poiret One", cursive;
   background-image: url(la0.jpeg);
   background-color: var(--background-after);
   background-blend-mode: saturation;
@@ -223,30 +224,52 @@ nav .navbar_menubar {
   color: var(--color-white);
   height: 100vh;
 }
-.porfolio_title {
+.portfolio_title {
   font-size: var(--font-xxlarge);
   text-align: center;
   margin-top: var(--space-md);
   margin-bottom: var(--space-lg);
 }
-.porfolio_list {
+.portfolio_list {
   display: flex;
   justify-content: space-around;
   align-content: center;
   flex-wrap: wrap;
-  height: 50vh;
+  height: 60vh;
 }
-.porfolio_list li {
-  border: 1px black solid;
+.portfolio_list li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   width: 25rem;
   height: 15rem;
   margin: var(--space-sm);
   list-style: none;
   overflow: hidden;
+  position: relative;
 }
-.porfolio_list li img {
+.portfolio_list li img {
   max-width: 100%;
   height: max-content;
+}
+.portfolio_list li img:hover {
+  filter: brightness(0.8);
+}
+.portfolio_list li div {
+  position: absolute;
+  bottom: 3%;
+  right: 0;
+  z-index: 2;
+  font-size: var(--font-xlarge);
+}
+
+.portfolio_list li div a {
+  margin: var(--space-sm);
+  color: gray;
+}
+.portfolio_list li div a:hover {
+  color: var(--color-black);
 }
 
 @media (max-width: 768px) {

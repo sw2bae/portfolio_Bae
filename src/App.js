@@ -4,6 +4,7 @@ import Header from "./components/header";
 import Skill from "./components/skill";
 import About from "./components/about";
 import Resume from "./components/resume";
+import Portfolio from "./components/portfolio";
 
 import './App.css';
 
@@ -17,17 +18,8 @@ function App() {
       <Skill />
       <About />
       <Resume />
+      <Portfolio />
 
-
-      <section className="porfolio">
-        <h1 className="porfolio_title">My Work</h1>
-        <ul className="porfolio_list">
-          <li><img alt="0" src="https://i.ibb.co/zVZHhkX/Survey-Creator.png" /></li>
-          <li>WORK2</li>
-          <li>WORK3</li>
-
-        </ul>
-      </section>
 
       <section className="contact">
         <h2 className="contact_title">Get in Touch</h2>
