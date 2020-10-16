@@ -6,7 +6,7 @@ function About() {
     return (
         <section className="about">
             <h2 className="about_title">About Me</h2>
-            <p>A Developer with Mathematical Thought | QA Analysis | Musical Sensibility</p>
+            <p>A Developer with Mathematical Thought | Musical Sensibility | QA Analysis</p>
             <span><i className="fas fa-building"></i>&nbsp;Experience  <br />
                 <i className="fas fa-caret-right"></i>&nbsp;SW Quality Assurance Engineer | Samsung Electronics of America (SEA)</span>
             <span><i className="fas fa-graduation-cap"></i>&nbsp;Education <br />
