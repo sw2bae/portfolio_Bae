@@ -1,7 +1,7 @@
 :root {
   --background-before: rgb(0, 0, 0, 0.9);
   --background-after: rgb(236, 60, 60, 0.6);
-  --background-footer: rgba(87, 33, 87, 0.5);
+  --background-input: rgb(133, 51, 51, 0.1);
   --background-image: url("seattle1.jpeg");
 
   --font-xxlarge: 3.5rem;
@@ -270,6 +270,73 @@ nav .navbar_menubar {
 /* ----------Main_contact--------- */
 .contact {
   font-family: "Amatic SC", cursive;
+  padding: var(--space-xlg);
+  padding-left: var(--space-xxlg);
+  padding-right: var(--space-xxlg);
+}
+.contact_title {
+  text-align: end;
+  margin-right: var(--space-xxlg);
+  font-size: var(--font-xxlarge);
+}
+.contact_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: var(--space-lg);
+}
+.contact_point {
+  font-size: var(--space-md);
+  font-weight: bold;
+}
+.contact_point p {
+  font-size: var(--space-lg);
+}
+.contact_point li {
+  list-style: none;
+}
+
+form {
+  width: 60%;
+}
+input {
+  padding: var(--space-sm);
+  border: none;
+  border-bottom: 2px solid var(--color-point);
+  box-sizing: border-box;
+  font-size: var(--font-medium);
+  font-weight: bold;
+  font-family: "Amatic SC", cursive;
+}
+input:focus {
+  outline: none;
+  background-color: var(--background-input);
+}
+input:hover {
+  background-color: var(--background-input);
+}
+.nameInput {
+  width: 50%;
+}
+.emailInput {
+  width: 50%;
+}
+.bodyInput {
+  width: 100%;
+  /* height: 40px; */
+}
+input::placeholder {
+  font-size: var(--font-medium);
+  color: var(--color-point);
+  font-family: "Amatic SC", cursive;
+}
+
+.contact_btn {
+  font-size: var(--font-xxlarge);
+  margin: var(--space-sm);
+  margin-left: var(--space-xlg);
+  margin-right: var(--space-xlg);
+  color: var(--color-point);
 }
 
 /* ----------Main_footer------------ */

@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import Projects from "../projects.json";
 
 function Portfolio() {
-    console.log(Projects);
-
     return (
         <section className="portfolio">
             <h1 className="portfolio_title">My Work</h1>

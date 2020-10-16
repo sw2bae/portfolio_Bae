@@ -11,6 +11,12 @@ import './App.css';
 
 function App() {
 
+  function black(e) {
+    e.target.className = "fas fa-paper-plane";
+  }
+  function white(e) {
+    e.target.className = "far fa-paper-plane"
+  }
 
 
   return (
@@ -25,22 +31,28 @@ function App() {
       <section className="contact">
         <h2 className="contact_title">Get in Touch</h2>
         <div className="contact_container">
-
           <div className="contact_point">
-            <p>Feel free to reach out. I'd love to hear from you!</p>
+            <p>I'd love to hear from you!</p><br />
             <ul>
-              <li>sw2.bae@gmail.com</li>
-              <li>214.727.4326</li>
+              <li>
+                <i className="fas fa-envelope-square"></i>&nbsp;sw2.bae@gmail.com</li>
+              <li><i className="fas fa-phone-square"></i>&nbsp;214.727.4326</li>
             </ul>
           </div>
 
           <form className="contact_input">
-            <input className="emailInput"></input>
-            <input className="nameInput"></input>
-            <input className="bodyInput"></input>
+            <div className="contact_userInfo">
+              <input className="emailInput" placeholder="Email" type="email"></input>
+              <input className="nameInput" placeholder="Name"></input>
+            </div>
+            <div className="contact_body">
+              <input className="bodyInput" placeholder="Tell me how I can help you"></input>
+            </div>
           </form>
+          <Link className="contact_btn" >
+            <i className="far fa-paper-plane" onMouseEnter={black} onMouseLeave={white}></i>
+          </Link>
         </div>
-        <button className="contact_btn">Send</button>
       </section>
 
       <Footer />
