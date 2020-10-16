@@ -79,6 +79,11 @@ nav ul li {
   font-size: var(--font-medium);
 }
 
+nav ul li a:hover,
+.navbar_icon a:hover {
+  color: var(--color-point);
+}
+
 .navbar_icon i {
   margin-left: var(--space-md);
 }
@@ -88,6 +93,7 @@ nav ul li {
 
 nav .navbar_menubar {
   position: absolute;
+  top: 6px;
   right: 0;
   display: none;
   align-self: center;
@@ -369,7 +375,7 @@ input::placeholder {
     align-items: flex-start;
     position: sticky;
     top: var(--space-sm);
-    background-color: rgba(88, 180, 255, 0.1);
+    background-color: var(--background-input);
   }
   .navbar_logo {
     font-size: var(--font-large);
@@ -388,6 +394,13 @@ input::placeholder {
     padding: 4px 0;
     font-size: large;
   }
+  .navbar_menu_active li a {
+    display: block;
+  }
+  .navbar_menu_active li :hover {
+    background-color: var(--background-input);
+    color: var(--color-point);
+  }
   .navbar_icon {
     display: none;
   }
@@ -399,6 +412,10 @@ input::placeholder {
     margin-right: var(--space-sm);
     margin-top: 0;
   }
+  .navbar_icon_active i:hover {
+    color: var(--color-point);
+  }
+
   nav .navbar_menubar {
     display: block;
   }
@@ -429,7 +446,10 @@ input::placeholder {
   }
   .about_title {
     margin-top: 0;
-    font-size: var(--font-large);
+    font-size: var(--font-xlarge);
+  }
+  .about p {
+    font-size: var(--font-small);
   }
   .about_skill:last-child {
     margin-bottom: 0;
@@ -454,6 +474,10 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    height: 100%;
+  }
+  .portfolio_list {
+    height: 100%;
   }
   .portfolio_title {
     font-size: var(--font-xlarge);

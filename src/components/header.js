@@ -14,17 +14,29 @@ function Header() {
         <header>
             <nav className="navbar">
                 <div className="navbar_logo">
-                    <i class="fab fa-connectdevelop"></i>
-                    <span className="navbar_title"> <span className="point">BAE</span></span>
+                    <Link onClick={() => {
+                        window.scrollTo(0, 0)
+                    }}>
+                        <i class="fab fa-connectdevelop"></i>
+                        <span className="navbar_title"> <span className="point">BAE</span></span>
+                    </Link>
                 </div>
                 <Link className='navbar_menubar' onClick={toggleBtn}>
                     <i className="fas fa-bars"></i>
                 </Link>
                 <ul className={"navbar_menu" + (toggleBtnStatus ? "_active" : "")}>
-                    <li><a href>About</a></li>
-                    <li><a href>Resume</a></li>
-                    <li><a href>Portfolio</a></li>
-                    <li><a href>Contact</a></li>
+                    <li><Link onClick={() => {
+                        window.scrollTo(0, document.body.scrollHeight)
+                    }}>About</Link></li>
+                    <li><Link onClick={() => {
+                        window.scrollTo(0, document.body.scrollHeight)
+                    }}>Resume</Link></li>
+                    <li><Link onClick={() => {
+                        window.scrollTo(0, document.body.scrollHeight)
+                    }}>Portfolio</Link></li>
+                    <li><Link onClick={() => {
+                        window.scrollTo(0, document.body.scrollHeight)
+                    }}>Contact</Link></li>
                 </ul>
                 <div className={"navbar_icon" + (toggleBtnStatus ? "_active" : "")}>
                     <a href="https://github.com/sw2bae" target="_blank" rel="noopener noreferrer">
