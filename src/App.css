@@ -364,6 +364,9 @@ input::placeholder {
 .footer_icon a {
   margin-left: var(--space-md);
 }
+.footer_icon a:hover {
+  color: var(--color-point);
+}
 
 @media (max-width: 768px) {
   header {
