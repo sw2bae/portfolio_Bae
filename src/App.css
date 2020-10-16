@@ -1,6 +1,7 @@
 :root {
   --background-before: rgb(0, 0, 0, 0.9);
   --background-after: rgb(236, 60, 60, 0.6);
+  --background-footer: rgba(87, 33, 87, 0.5);
   --background-image: url("seattle1.jpeg");
 
   --font-xxlarge: 3.5rem;
@@ -66,10 +67,6 @@ header:hover {
 .navbar_logo {
   font-size: var(--font-large);
 }
-.navbar_title {
-  font-size: var(--font-large);
-}
-
 nav ul {
   display: flex;
   list-style: none;
@@ -83,7 +80,7 @@ nav ul li {
 }
 
 .navbar_icon i {
-  margin-left: 1rem;
+  margin-left: var(--space-md);
 }
 .navbar_icon a {
   font-size: var(--font-large);
@@ -235,7 +232,7 @@ nav .navbar_menubar {
   justify-content: space-around;
   align-content: center;
   flex-wrap: wrap;
-  height: 60vh;
+  height: 70vh;
 }
 .portfolio_list li {
   display: flex;
@@ -263,13 +260,42 @@ nav .navbar_menubar {
   z-index: 2;
   font-size: var(--font-xlarge);
 }
-
 .portfolio_list li div a {
   margin: var(--space-sm);
   color: gray;
 }
 .portfolio_list li div a:hover {
   color: var(--color-black);
+}
+/* ----------Main_contact--------- */
+.contact {
+  font-family: "Amatic SC", cursive;
+}
+
+/* ----------Main_footer------------ */
+.footer {
+  padding: var(--space-md);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--color-white);
+  font-family: "Acme", sans-serif;
+  background-image: url(seattle0.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--background-after);
+  background-blend-mode: saturation;
+}
+.footer_point {
+  color: var(--color-point);
+  font-weight: bold;
+}
+.footer_logo,
+.footer_icon {
+  font-size: var(--font-large);
+}
+.footer_icon a {
+  margin-left: var(--space-md);
 }
 
 @media (max-width: 768px) {
