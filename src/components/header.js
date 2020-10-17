@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 
-function Header() {
+function Header({ scrollDown }) {
 
     const [toggleBtnStatus, setToggleBtnStatus] = useState(false);
 
     function toggleBtn(e) {
         setToggleBtnStatus(!toggleBtnStatus);
-        console.log(toggleBtnStatus);
     };
+
+
+
 
     return (
         <header>
@@ -25,15 +27,9 @@ function Header() {
                     <i className="fas fa-bars"></i>
                 </Link>
                 <ul className={"navbar_menu" + (toggleBtnStatus ? "_active" : "")}>
-                    <li><Link onClick={() => {
-                        window.scrollTo(0, document.body.scrollHeight)
-                    }}>About</Link></li>
-                    <li><Link onClick={() => {
-                        window.scrollTo(0, document.body.scrollHeight)
-                    }}>Resume</Link></li>
-                    <li><Link onClick={() => {
-                        window.scrollTo(0, document.body.scrollHeight)
-                    }}>Portfolio</Link></li>
+                    <li><Link id="about" onClick={scrollDown}>About</Link></li>
+                    <li><Link id="resume" onClick={scrollDown}>Resume</Link></li>
+                    <li><Link id="portfolio" onClick={scrollDown}>Portfolio</Link></li>
                     <li><Link onClick={() => {
                         window.scrollTo(0, document.body.scrollHeight)
                     }}>Contact</Link></li>

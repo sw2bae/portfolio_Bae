@@ -368,6 +368,16 @@ input::placeholder {
   color: var(--color-point);
 }
 
+@media (max-width: 992px) {
+  .portfolio {
+    padding: var(--space-md);
+    display: flex;
+    height: 100%;
+  }
+  .portfolio_list {
+    height: 100%;
+  }
+}
 @media (max-width: 768px) {
   header {
     padding: var(--space-sm);
