@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio_Bae/static/css/main.658674ad.chunk.css",
+    "main.js": "/portfolio_Bae/static/js/main.2ee6672c.chunk.js",
+    "main.js.map": "/portfolio_Bae/static/js/main.2ee6672c.chunk.js.map",
+    "runtime-main.js": "/portfolio_Bae/static/js/runtime-main.4f750ca7.js",
+    "runtime-main.js.map": "/portfolio_Bae/static/js/runtime-main.4f750ca7.js.map",
+    "static/js/2.8b1e4a90.chunk.js": "/portfolio_Bae/static/js/2.8b1e4a90.chunk.js",
+    "static/js/2.8b1e4a90.chunk.js.map": "/portfolio_Bae/static/js/2.8b1e4a90.chunk.js.map",
+    "index.html": "/portfolio_Bae/index.html",
+    "precache-manifest.6061c65b83aa22b5ec803718624269c4.js": "/portfolio_Bae/precache-manifest.6061c65b83aa22b5ec803718624269c4.js",
+    "service-worker.js": "/portfolio_Bae/service-worker.js",
+    "static/css/main.658674ad.chunk.css.map": "/portfolio_Bae/static/css/main.658674ad.chunk.css.map",
+    "static/js/2.8b1e4a90.chunk.js.LICENSE.txt": "/portfolio_Bae/static/js/2.8b1e4a90.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/portfolio_Bae/static/media/seattle1.a0d16bcd.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4f750ca7.js",
+    "static/js/2.8b1e4a90.chunk.js",
+    "static/css/main.658674ad.chunk.css",
+    "static/js/main.2ee6672c.chunk.js"
+  ]
+}
