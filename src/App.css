@@ -518,4 +518,8 @@ input::placeholder {
   .footer_logo {
     font-size: var(--font-large);
   }
+  #scrollUp {
+    font-size: var(--font-large);
+    bottom: var(--space-xxlg);
+  }
 }
