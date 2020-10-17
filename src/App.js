@@ -7,6 +7,7 @@ import Resume from "./components/resume";
 import Portfolio from "./components/portfolio";
 import Footer from "./components/footer";
 import Contact from "./components/contact";
+import ScrollUpBtn from "./components/scrollUpBtn";
 import './App.css';
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
       <Portfolio />
       <Contact />
       <Footer />
+      <ScrollUpBtn />
     </Router >
   );
 }
