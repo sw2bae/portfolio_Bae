@@ -1,17 +1,17 @@
 [
   {
-    "image": "https://www.legalreader.com/wp-content/uploads/2014/07/seattle-background.jpg",
-    "github": "",
-    "URL": ""
+    "image": "https://i.ibb.co/GM9RZZM/survey-Creator.png",
+    "github": "https://github.com/sw2bae/InQuire",
+    "URL": "https://inquire-6846.herokuapp.com/"
   },
   {
-    "image": "https://i.pinimg.com/originals/ef/72/79/ef7279cff2b47063e3100e282d1bc0a2.jpg",
-    "github": "",
-    "URL": ""
+    "image": "https://i.ibb.co/Xp59BV4/device-Tracker.png",
+    "github": "https://github.com/sw2bae/DeviceTracker",
+    "URL": "https://mqlks-devicetracker.herokuapp.com/"
   },
   {
-    "image": "https://www.legalreader.com/wp-content/uploads/2014/07/seattle-background.jpg",
-    "github": "",
-    "URL": ""
+    "image": "https://i.ibb.co/p3wDG6Z/sayWoof.png",
+    "github": "https://github.com/sw2bae/HTML-CSS-Challenge_React",
+    "URL": "https://sw2bae.github.io/HTML-CSS-Challenge_React/"
   }
 ]
