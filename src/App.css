@@ -344,8 +344,8 @@ input::placeholder {
   justify-content: space-around;
   align-items: center;
   color: var(--color-white);
-  font-family: "Acme", sans-serif;
-  /* font-family: "Alef", sans-serif; */
+  /* font-family: "Acme", sans-serif; */
+  font-family: "Alef", sans-serif;
   background-image: url(seattle0.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
