@@ -49,7 +49,8 @@ header {
   flex-direction: column;
   justify-content: space-between;
   color: var(--color-white);
-  font-family: "Acme", sans-serif;
+  /* font-family: "Acme", sans-serif; */
+  font-family: "Alef", sans-serif;
 }
 
 header:hover {
@@ -141,7 +142,8 @@ nav .navbar_menubar {
   padding: var(--space-xlg);
   padding-left: var(--space-xxlg);
   padding-right: var(--space-xxlg);
-  font-family: "Acme", sans-serif;
+  /* font-family: "Acme", sans-serif; */
+  font-family: "Alef", sans-serif;
   color: var(--color-white);
   background-image: url("hawaii0.jpeg");
   background-color: var(--background-after);
@@ -210,6 +212,7 @@ nav .navbar_menubar {
   padding-left: var(--space-xxlg);
   padding-right: var(--space-xxlg);
   font-family: "Poiret One", cursive;
+  /* font-family: "Alef", sans-serif; */
   background-image: url(la0.jpeg);
   background-color: var(--background-after);
   background-blend-mode: saturation;
@@ -267,6 +270,7 @@ nav .navbar_menubar {
 /* ----------Main_contact--------- */
 .contact {
   font-family: "Amatic SC", cursive;
+  /* font-family: "Alef", sans-serif; */
   padding: var(--space-xlg);
   padding-left: var(--space-xxlg);
   padding-right: var(--space-xxlg);
@@ -275,6 +279,7 @@ nav .navbar_menubar {
   text-align: end;
   margin-right: var(--space-xxlg);
   font-size: var(--font-xxlarge);
+  /* color: var(--color-point); */
 }
 .contact_container {
   display: flex;
@@ -340,6 +345,7 @@ input::placeholder {
   align-items: center;
   color: var(--color-white);
   font-family: "Acme", sans-serif;
+  /* font-family: "Alef", sans-serif; */
   background-image: url(seattle0.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -499,6 +505,12 @@ input::placeholder {
     padding: var(--space-md);
     height: 100%;
   }
+  /* .contact_title {
+    font-size: var(--font-xlarge);
+  }
+  .contact_point p {
+    font-size: var(--font-medium);
+  } */
   .contact_container {
     display: flex;
     flex-direction: column;
