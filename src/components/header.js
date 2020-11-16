@@ -16,12 +16,10 @@ function Header({ scrollDown }) {
         <header>
             <nav className="navbar">
                 <div className="navbar_logo">
-                    <Link onClick={() => {
-                        window.scrollTo(0, 0)
-                    }}>
+                    <a href="#top">
                         <i class="fab fa-connectdevelop"></i>
                         <span className="navbar_title"> <span className="point">BAE</span></span>
-                    </Link>
+                    </a>
                 </div>
                 <Link className='navbar_menubar' onClick={toggleBtn}>
                     <i className="fas fa-bars"></i>

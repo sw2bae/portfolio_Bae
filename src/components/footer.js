@@ -6,10 +6,10 @@ function Footer() {
     return (
         <footer className="footer">
             <div className="footer_logo">
-                <Link onClick={() => {
-                    window.scrollTo(0, 0)
-                }}><i class="fab fa-connectdevelop"></i>
-                    <span className="footer_point">BAE</span></Link>
+                <a href="#top">
+                    <i class="fab fa-connectdevelop"></i>
+                    <span className="footer_point">BAE</span>
+                </a>
             </div>
             <div className="footer_right">
                 <span>Copyright 2020. All rights reserved.</span>

@@ -11,10 +11,8 @@ function ScrollUpBtn() {
     }
 
     return (
-        <Link onClick={() => {
-            window.scrollTo(0, 0)
-        }}> <i class="far fa-arrow-alt-circle-up" id="scrollUp" onMouseEnter={black} onMouseLeave={white}></i>
-        </Link>
+        <a href="#top"> <i class="far fa-arrow-alt-circle-up" id="scrollUp" onMouseEnter={black} onMouseLeave={white}></i>
+        </a>
     );
 }
 
